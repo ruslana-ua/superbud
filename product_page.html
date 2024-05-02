@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240502134954">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240502151836">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
@@ -220,11 +220,11 @@
 							</div>
 							<div class="product-info__wrap product-wrap">
 								<div data-quantity class="product-wrap__quantity product-quantity">
-									<button data-quantity-minus type="button" class="product-quantity__button">-</button>
+									<button data-quantity-minus type="button" class="product-quantity__button _icon-minus-quant"></button>
 									<div class="product-quantity__input">
 										<input data-quantity-value data-quantity-max='50' autocomplete="off" type="number" name="size" readonly value="1">
 									</div>
-									<button data-quantity-plus type="button" class="product-quantity__button">+</button>
+									<button data-quantity-plus type="button" class="product-quantity__button _icon-plus-quant"></button>
 								</div>
 								<button data-popup="#popup-cart" class="product-wrap__buy--btn">Add to cart</button>
 							</div>
@@ -264,7 +264,13 @@
 								</div>
 							</div>
 							<div class="product-fix__buttons">
-								<button data-popup="#popup-quick-order" class="product-fix__button product-fix__buy--btn">Quick purchase</button>
+								<div data-quantity class="product-fix__quantity product-quantity">
+									<button data-quantity-minus type="button" class="product-quantity__button _icon-minus-quant"></button>
+									<div class="product-quantity__input">
+										<input data-quantity-value data-quantity-max='50' autocomplete="off" type="number" name="size" readonly value="1">
+									</div>
+									<button data-quantity-plus type="button" class="product-quantity__button _icon-plus-quant"></button>
+								</div>
 								<button data-popup="#popup-cart" type="submit" class="product-fix__button product-fix__add--btn_wh">Add to cart</button>
 							</div>
 						</div>
@@ -1479,8 +1485,6 @@
 								<a href="" class="callback-popup__link _icon-whatsapp"></a>
 								<a href="" class="callback-popup__link _icon-telegram-1"></a>
 								<a href="" class="callback-popup__link _icon-viber"></a>
-								<a href="" class="callback-popup__link _icon-messenger"></a>
-								<a href="" class="callback-popup__link _icon-whatsapp"></a>
 								<a href="" class="callback-popup__link _icon-telegram-1"></a>
 							</div>
 						</div>
@@ -1567,11 +1571,11 @@
 								<div class="quick-order__row">
 									<div class="quick-order__left">
 										<div data-quantity class="quick-order__quantity product-quantity">
-											<button data-quantity-minus type="button" class="product-quantity__button">-</button>
+											<button data-quantity-minus type="button" class="product-quantity__button _icon-minus-quant"></button>
 											<div class="product-quantity__input">
 												<input data-quantity-value data-quantity-max='50' autocomplete="off" type="number" name="size" readonly value="1">
 											</div>
-											<button data-quantity-plus type="button" class="product-quantity__button">+</button>
+											<button data-quantity-plus type="button" class="product-quantity__button _icon-plus-quant"></button>
 										</div>
 										<div class="quick-order__price--wrap product__price--wrap">
 											<div class="product__price--old">40 $</div>
@@ -1693,13 +1697,11 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/jquery-3.7.1.min.js?_v=20240502134954"></script>
-	<script src="js/intlTelInput.min.js?_v=20240502134954"></script>
-	<script src="js/jquery.inputmask.min.js?_v=20240502134954"></script>
+	<script src="js/jquery-3.7.1.min.js?_v=20240502151836"></script>
+	<script src="js/intlTelInput.min.js?_v=20240502151836"></script>
+	<script src="js/jquery.inputmask.min.js?_v=20240502151836"></script>
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-
-			// phone mask
 			const phoneInputs = document.querySelectorAll(".phone-mask");
 			if (phoneInputs) {
 				phoneInputs.forEach(function (phoneInput) {
@@ -1730,7 +1732,7 @@
 			}
 		});
 	</script>
-	<script src="js/app.min.js?_v=20240502134954"></script>
+	<script src="js/app.min.js?_v=20240502151836"></script>
 </body>
 
 </html>

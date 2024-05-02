@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240502134954">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240502151836">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
@@ -255,53 +255,16 @@
 								<li>Max Potency Berberine Supplement: Achieve diet goals with Berberine HCL with Colloidal Gold; With Berberine 1500mg per serving and a three-month supply in 1 bottle, our Berberine capsules offer stronger concentration than Berberine 1000mg</li>
 							</ul>
 						</div>
-						<div data-tabs class="delivery-pay__tabs delivery-tabs">
-							<nav data-tabs-titles class="delivery-tabs__navigation">
-								<button type="button" class="delivery-tabs__button _tab-active">UPS</button>
-								<button type="button" class="delivery-tabs__button">USPS</button>
-								<button type="button" class="delivery-tabs__button">DHL</button>
-							</nav>
-							<div data-tabs-body class="delivery-tabs__content">
-								<div class="delivery-tabs__body">
-									<div class="delivery-tabs__order delivery-order">
-										<div class="delivery-order__title">Відстежити замовлення</div>
-										<div class="delivery-order__info">Відстежуйте статус Вашого замовлення за номером ТТН посилки прямо на нашому сайті</div>
-										<form action="" class="delivery-order__form">
-											<div class="delivery-order__item">
-												<input type="text" name="order" placeholder="Введіть номер ТТН" class="delivery-order__input">
-												<button type="button" class="delivery-order__clear _icon-del"></button>
-											</div>
-											<button type="submit" class="delivery-order__link--btn">відстежити</button>
-										</form>
-									</div>
+						<div class="delivery-tabs__order delivery-order">
+							<div class="delivery-order__title">Відстежити замовлення USPS</div>
+							<div class="delivery-order__info">Відстежуйте статус Вашого замовлення за номером ТТН посилки прямо на нашому сайті</div>
+							<form action="" class="delivery-order__form">
+								<div class="delivery-order__item">
+									<input type="text" name="order" placeholder="Введіть номер ТТН" class="delivery-order__input">
+									<button type="button" class="delivery-order__clear _icon-del"></button>
 								</div>
-								<div class="delivery-tabs__body">
-									<div class="delivery-tabs__order delivery-order">
-										<div class="delivery-order__title">Відстежити замовлення USPS</div>
-										<div class="delivery-order__info">Відстежуйте статус Вашого замовлення за номером ТТН посилки прямо на нашому сайті</div>
-										<form action="" class="delivery-order__form">
-											<div class="delivery-order__item">
-												<input type="text" name="order" placeholder="Введіть номер ТТН" class="delivery-order__input">
-												<button type="button" class="delivery-order__clear _icon-del"></button>
-											</div>
-											<button type="submit" class="delivery-order__link--btn">відстежити</button>
-										</form>
-									</div>
-								</div>
-								<div class="delivery-tabs__body">
-									<div class="delivery-tabs__order delivery-order">
-										<div class="delivery-order__title">Відстежити замовлення DHL</div>
-										<div class="delivery-order__info">Відстежуйте статус Вашого замовлення за номером ТТН посилки прямо на нашому сайті</div>
-										<form action="" class="delivery-order__form">
-											<div class="delivery-order__item">
-												<input type="text" name="order" placeholder="Введіть номер ТТН" class="delivery-order__input">
-												<button type="button" class="delivery-order__clear _icon-del"></button>
-											</div>
-											<button type="submit" class="delivery-order__link--btn">відстежити</button>
-										</form>
-									</div>
-								</div>
-							</div>
+								<button type="submit" class="delivery-order__link--btn">відстежити</button>
+							</form>
 						</div>
 						<div class="delivery-tabs__consultation delivery-consultation">
 							<div class="delivery-consultation__icon _icon-phone-2"></div>
@@ -309,7 +272,7 @@
 							<form action="" class="delivery-consultation__form">
 								<div class="delivery-consultation__data">
 									<div class="delivery-consultation__item">
-										<input type="text" name="name" placeholder="Name" class="delivery-consultation__input">
+										<input type="text" name="name" placeholder="Name*" class="delivery-consultation__input">
 									</div>
 									<div class="delivery-consultation__item">
 										<input name="tel" type="tel" class="form-contacts__input phone-mask">
@@ -437,8 +400,6 @@
 								<a href="" class="callback-popup__link _icon-whatsapp"></a>
 								<a href="" class="callback-popup__link _icon-telegram-1"></a>
 								<a href="" class="callback-popup__link _icon-viber"></a>
-								<a href="" class="callback-popup__link _icon-messenger"></a>
-								<a href="" class="callback-popup__link _icon-whatsapp"></a>
 								<a href="" class="callback-popup__link _icon-telegram-1"></a>
 							</div>
 						</div>
@@ -525,11 +486,11 @@
 								<div class="quick-order__row">
 									<div class="quick-order__left">
 										<div data-quantity class="quick-order__quantity product-quantity">
-											<button data-quantity-minus type="button" class="product-quantity__button">-</button>
+											<button data-quantity-minus type="button" class="product-quantity__button _icon-minus-quant"></button>
 											<div class="product-quantity__input">
 												<input data-quantity-value data-quantity-max='50' autocomplete="off" type="number" name="size" readonly value="1">
 											</div>
-											<button data-quantity-plus type="button" class="product-quantity__button">+</button>
+											<button data-quantity-plus type="button" class="product-quantity__button _icon-plus-quant"></button>
 										</div>
 										<div class="quick-order__price--wrap product__price--wrap">
 											<div class="product__price--old">40 $</div>
@@ -560,13 +521,11 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/jquery-3.7.1.min.js?_v=20240502134954"></script>
-	<script src="js/intlTelInput.min.js?_v=20240502134954"></script>
-	<script src="js/jquery.inputmask.min.js?_v=20240502134954"></script>
+	<script src="js/jquery-3.7.1.min.js?_v=20240502151836"></script>
+	<script src="js/intlTelInput.min.js?_v=20240502151836"></script>
+	<script src="js/jquery.inputmask.min.js?_v=20240502151836"></script>
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-
-			// phone mask
 			const phoneInputs = document.querySelectorAll(".phone-mask");
 			if (phoneInputs) {
 				phoneInputs.forEach(function (phoneInput) {
@@ -597,7 +556,7 @@
 			}
 		});
 	</script>
-	<script src="js/app.min.js?_v=20240502134954"></script>
+	<script src="js/app.min.js?_v=20240502151836"></script>
 </body>
 
 </html>
