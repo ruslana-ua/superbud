@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240428185702">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240502130316">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
@@ -1591,43 +1591,44 @@
 			</div>
 		</div>
 	</div>
-	<script src='https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js?_v=20240428185702'></script>
-	<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.5/build/js/intlTelInput.min.js?_v=20240428185702"></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js?_v=20240428185702'></script>
-
+	<script src="files/jquery-3.7.1.min.js?_v=20240502130316"></script>
+	<script src="files/intlTelInput.min.js?_v=20240502130316"></script>
+	<script src="files/jquery.inputmask.min.js?_v=20240502130316"></script>
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
 
 			// phone mask
 			const phoneInputs = document.querySelectorAll(".phone-mask");
-			phoneInputs.forEach(function(phoneInput) {
-				var iti = window.intlTelInput(phoneInput, {
-					autoPlaceholder: "aggressive",
-					countrySearch: false,
-					useFullscreenPopup: false,
-					showSelectedDialCode: true,
-					onlyCountries: ["en", "us", "tr", "es", "de", "fr", "it", "nl", "pl", "ru"],
-					customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {
-						let mask = `${selectedCountryPlaceholder}`.replace(/[0-9]/g, '9');
-						let maskPlaceholder = `${mask}`.replace(/9/g, " ");
-						Inputmask({
-							"mask": ` ${mask}`,
-							placeholder: " ",
-							clearMaskOnLostFocus: false,
-							showMaskOnHover: false,
-						}).mask(phoneInput);
-						return ` ${maskPlaceholder}`;
-					},
-					utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.5/build/js/utils.js"
-				});
+			if (phoneInputs) {
+				phoneInputs.forEach(function(phoneInput) {
+					var iti = window.intlTelInput(phoneInput, {
+						autoPlaceholder: "aggressive",
+						countrySearch: false,
+						useFullscreenPopup: false,
+						showSelectedDialCode: true,
+						onlyCountries: ["en", "us", "tr", "es", "de", "fr", "it", "nl", "pl", "ru"],
+						customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {
+							let mask = `${selectedCountryPlaceholder}`.replace(/[0-9]/g, '9');
+							let maskPlaceholder = `${mask}`.replace(/9/g, " ");
+							Inputmask({
+								"mask": ` ${mask}`,
+								placeholder: " ",
+								clearMaskOnLostFocus: false,
+								showMaskOnHover: false,
+							}).mask(phoneInput);
+							return ` ${maskPlaceholder}`;
+						},
+						utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.5/build/js/utils.js"
+					});
 
-				phoneInput.addEventListener("countrychange", function() {
-					phoneInput.value = ""; // Очистка поля при изменении кода страны
+					phoneInput.addEventListener("countrychange", function() {
+						phoneInput.value = ""; // Очистка поля при изменении кода страны
+					});
 				});
-			});
+			}
 		});
 	</script>
-	<script src="js/app.min.js?_v=20240428185702"></script>
+	<script src="js/app.min.js?_v=20240502130316"></script>
 </body>
 
 </html>

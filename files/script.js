@@ -1,0 +1,1 @@
+window.myFunction=function(){console.log("Это функция из другого файла.")};

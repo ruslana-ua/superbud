@@ -6355,6 +6355,52 @@
                     }
                 }
             });
+            if (document.querySelector(".testimonials__slider")) new swiper_core_Swiper(".testimonials__slider", {
+                modules: [ Navigation, freeMode, Mousewheel ],
+                observer: true,
+                observeParents: true,
+                spaceBetween: 20,
+                speed: 800,
+                freeMode: {
+                    enabled: true,
+                    sticky: false,
+                    momentumBounce: false
+                },
+                mousewheel: {
+                    enabled: true,
+                    sensitivity: .2,
+                    forceToAxis: true
+                },
+                navigation: {
+                    prevEl: ".testimonials__button-prev",
+                    nextEl: ".testimonials__button-next"
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1.05,
+                        slidesPerGroup: 1,
+                        spaceBetween: 12,
+                        freeMode: {
+                            enabled: true,
+                            sticky: true,
+                            momentumBounce: false
+                        }
+                    },
+                    768: {
+                        slidesPerView: 1.6,
+                        slidesPerGroup: 1
+                    },
+                    992: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2
+                    },
+                    1386: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 3
+                    }
+                },
+                on: {}
+            });
         };
         window.addEventListener("DOMContentLoaded", (function(e) {
             initSliders();
