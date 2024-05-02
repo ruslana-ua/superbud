@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240502130316">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240502134954">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
@@ -34,7 +34,9 @@
 								<div class="checkout__order order-checkout">
 									<div class="order-checkout__item">
 										<a href="" class="order-checkout__image">
-											<picture><source data-srcset="img/goods/goods_01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/goods/goods_01.png" alt=""></picture>
+											<picture>
+												<source data-srcset="img/goods/goods_01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/goods/goods_01.png" alt="">
+											</picture>
 										</a>
 										<div class="order-checkout__content">
 											<div class="order-checkout__top">
@@ -45,7 +47,9 @@
 									</div>
 									<div class="order-checkout__item">
 										<a href="" class="order-checkout__image">
-											<picture><source data-srcset="img/goods/goods_02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/goods/goods_02.png" alt=""></picture>
+											<picture>
+												<source data-srcset="img/goods/goods_02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/goods/goods_02.png" alt="">
+											</picture>
 										</a>
 										<div class="order-checkout__content">
 											<div class="order-checkout__top">
@@ -56,7 +60,9 @@
 									</div>
 									<div class="order-checkout__item">
 										<a href="" class="order-checkout__image">
-											<picture><source data-srcset="img/goods/goods_01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/goods/goods_01.png" alt=""></picture>
+											<picture>
+												<source data-srcset="img/goods/goods_01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/goods/goods_01.png" alt="">
+											</picture>
 										</a>
 										<div class="order-checkout__content">
 											<div class="order-checkout__top">
@@ -133,23 +139,23 @@
 			</section>
 		</main>
 	</div>
-	<script src="files/jquery-3.7.1.min.js?_v=20240502130316"></script>
-	<script src="files/intlTelInput.min.js?_v=20240502130316"></script>
-	<script src="files/jquery.inputmask.min.js?_v=20240502130316"></script>
+	<script src="js/jquery-3.7.1.min.js?_v=20240502134954"></script>
+	<script src="js/intlTelInput.min.js?_v=20240502134954"></script>
+	<script src="js/jquery.inputmask.min.js?_v=20240502134954"></script>
 	<script>
-		document.addEventListener("DOMContentLoaded", function() {
+		document.addEventListener("DOMContentLoaded", function () {
 
 			// phone mask
 			const phoneInputs = document.querySelectorAll(".phone-mask");
 			if (phoneInputs) {
-				phoneInputs.forEach(function(phoneInput) {
+				phoneInputs.forEach(function (phoneInput) {
 					var iti = window.intlTelInput(phoneInput, {
 						autoPlaceholder: "aggressive",
 						countrySearch: false,
 						useFullscreenPopup: false,
 						showSelectedDialCode: true,
 						onlyCountries: ["en", "us", "tr", "es", "de", "fr", "it", "nl", "pl", "ru"],
-						customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {
+						customPlaceholder: function (selectedCountryPlaceholder, selectedCountryData) {
 							let mask = `${selectedCountryPlaceholder}`.replace(/[0-9]/g, '9');
 							let maskPlaceholder = `${mask}`.replace(/9/g, " ");
 							Inputmask({
@@ -163,14 +169,14 @@
 						utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.5/build/js/utils.js"
 					});
 
-					phoneInput.addEventListener("countrychange", function() {
+					phoneInput.addEventListener("countrychange", function () {
 						phoneInput.value = ""; // Очистка поля при изменении кода страны
 					});
 				});
 			}
 		});
 	</script>
-	<script src="js/app.min.js?_v=20240502130316"></script>
+	<script src="js/app.min.js?_v=20240502134954"></script>
 </body>
 
 </html>
